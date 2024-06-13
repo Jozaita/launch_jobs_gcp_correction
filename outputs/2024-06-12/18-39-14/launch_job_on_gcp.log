@@ -1,0 +1,42 @@
+[2024-06-12 18:39:15,000][[mbp-de-juan.home] InstanceGroupCreator][INFO] - Creating instance group...
+[2024-06-12 18:39:15,000][[mbp-de-juan.home] InstanceTemplateCreator][INFO] - Creating instance template...
+[2024-06-12 18:39:15,000][[mbp-de-juan.home] InstanceTemplateCreator][INFO] - {'instance_group_name': 'test', 'docker_image': 'ml_end_to_end', 'zone': 'europe-west1-b', 'python_hash_seed': 42, 'mlflow_tracking_uri': 'localhost:6101', 'node_count': 1, 'disks': []}
+[2024-06-12 18:39:15,960][[mbp-de-juan.home] InstanceTemplateCreator][INFO] - Using STANDARD machine
+[2024-06-12 18:39:15,962][[mbp-de-juan.home] InstanceTemplateCreator][INFO] - Creating instance template...
+[2024-06-12 18:39:18,615][[mbp-de-juan.home] InstanceTemplateCreator][INFO] - Instance template created
+[2024-06-12 18:39:26,034][[mbp-de-juan.home] utils][ERROR] - Exception occurred
+Traceback (most recent call last):
+  File "/Users/jozaita/Documents/gcp_distributed/utils.py", line 26, in wait_for_extended_operation
+    result = operation.result(timeout=timeout)
+  File "/Users/jozaita/Library/Caches/pypoetry/virtualenvs/launching-jobs-gcp-BFKqvXBb-py3.10/lib/python3.10/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 BAD REQUEST INVALID_USAGE: Boot disk specified in template must reference to image or existing disk.
+[2024-06-12 18:39:26,037][[mbp-de-juan.home] utils][ERROR] - ex.errors:
+[code: "INVALID_USAGE"
+message: "Boot disk specified in template must reference to image or existing disk."
+]
+[2024-06-12 18:39:26,037][[mbp-de-juan.home] utils][ERROR] - ex.response:
+end_time: "2024-06-12T09:39:25.029-07:00"
+error {
+  errors {
+    code: "INVALID_USAGE"
+    message: "Boot disk specified in template must reference to image or existing disk."
+  }
+}
+http_error_message: "BAD REQUEST"
+http_error_status_code: 400
+id: 2688528622771532247
+insert_time: "2024-06-12T09:39:20.705-07:00"
+kind: "compute#operation"
+name: "operation-1718210359476-61ab4062040b1-3ca61989-a6e76f92"
+operation_type: "compute.instanceGroupManagers.insert"
+progress: 100
+self_link: "https://www.googleapis.com/compute/v1/projects/ageless-fire-423616-e1/zones/europe-west1-b/operations/operation-1718210359476-61ab4062040b1-3ca61989-a6e76f92"
+start_time: "2024-06-12T09:39:20.709-07:00"
+status: DONE
+target_id: 7690091319695536599
+target_link: "https://www.googleapis.com/compute/v1/projects/ageless-fire-423616-e1/zones/europe-west1-b/instanceGroupManagers/test"
+user: "jozaita@gmail.com"
+zone: "https://www.googleapis.com/compute/v1/projects/ageless-fire-423616-e1/zones/europe-west1-b"
+
+[2024-06-12 18:39:26,038][[mbp-de-juan.home] utils][ERROR] - Error message: Boot disk specified in template must reference to image or existing disk.
