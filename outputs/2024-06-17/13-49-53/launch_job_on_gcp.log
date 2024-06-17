@@ -1,0 +1,10 @@
+[2024-06-17 13:49:54,032][[MacBook-Pro-de-Juan.local] InstanceGroupCreator][INFO] - Creating instance group...
+[2024-06-17 13:49:54,032][[MacBook-Pro-de-Juan.local] InstanceTemplateCreator][INFO] - Creating instance template...
+[2024-06-17 13:49:54,032][[MacBook-Pro-de-Juan.local] InstanceTemplateCreator][INFO] - {'instance_group_name': 'test', 'docker_image': 'ml_end_to_end', 'zone': 'europe-west1-b', 'python_hash_seed': 42, 'mlflow_tracking_uri': 'localhost:6101', 'node_count': 1, 'disks': []}
+[2024-06-17 13:49:54,967][[MacBook-Pro-de-Juan.local] InstanceTemplateCreator][INFO] - Using STANDARD machine
+[2024-06-17 13:49:54,969][[MacBook-Pro-de-Juan.local] InstanceTemplateCreator][INFO] - Creating instance template...
+[2024-06-17 13:49:58,205][[MacBook-Pro-de-Juan.local] InstanceTemplateCreator][INFO] - Instance template created
+[2024-06-17 13:50:13,773][[MacBook-Pro-de-Juan.local] InstanceGroupCreator][INFO] - Instance group has been created
+[2024-06-17 13:50:13,871][[MacBook-Pro-de-Juan.local] InstanceGroupCreator][INFO] - Waiting for instances : 0
+[2024-06-17 13:50:15,439][[MacBook-Pro-de-Juan.local] InstanceGroupCreator][INFO] - Waiting for instances : 1
+[2024-06-17 13:50:15,888][[MacBook-Pro-de-Juan.local] InstanceGroupCreator][INFO] - Instance 6034828954091494425 ready
