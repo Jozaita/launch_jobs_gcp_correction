@@ -20,5 +20,5 @@ echo "PYTHON_HASH_SEED: ${PYTHON_HASH_SEED}"
 echo "NODE_COUNT: ${NODE_COUNT}"
 echo "DISKS: ${DISKS}"
 
-echo "deleting instance group ${INSTANCE_GROUP}"
+echo "deleting instance group ${INSTANCE_GROUP_NAME}"
 gcloud compute instance-groups managed delete --quiet ${INSTANCE_GROUP_NAME} --zone ${ZONE} 
